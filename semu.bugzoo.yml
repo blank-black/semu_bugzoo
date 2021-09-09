@@ -7,6 +7,7 @@ blueprints:
 tools:
   - name: klee-semu-relmut
     environment:
+    image: thierrytct/klee-semu-relmut:llvm-3.4.2-bugzoo
       PATH: "/home/klee-semu/klee_build/bin:/home/MART/build/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:${PATH}"
       LIBRARY_PATH: "/home/klee-semu/klee_build/Release+Debug+Asserts/lib/:/home/klee-semu/klee_build/lib/"
       LD_LIBRARY_PATH: "/home/klee-semu/klee_build/Release+Debug+Asserts/lib/:/home/klee-semu/klee_build/lib/"
