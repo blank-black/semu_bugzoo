@@ -2,12 +2,12 @@ version: '1.0'
 
 blueprints:
   - type: docker
-    tag: thierrytct/klee-semu-relmut:llvm-3.4.2-bugzoo
+    tag: boyangwoody/semu-relmut-bugzoo:0.1
 
 tools:
-  - name: klee-semu-relmut
+  - name: semu-relmut-bugzoo
     environment:
-    image: thierrytct/klee-semu-relmut:llvm-3.4.2-bugzoo
+    image: boyangwoody/semu-relmut-bugzoo:0.1
       PATH: "/home/klee-semu/klee_build/bin:/home/MART/build/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:${PATH}"
       LIBRARY_PATH: "/home/klee-semu/klee_build/Release+Debug+Asserts/lib/:/home/klee-semu/klee_build/lib/"
       LD_LIBRARY_PATH: "/home/klee-semu/klee_build/Release+Debug+Asserts/lib/:/home/klee-semu/klee_build/lib/"
